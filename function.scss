@@ -1,0 +1,11 @@
+@function cal($percen, $v) {
+  @if $v == w {
+    @return (($percen / 1920) * 100vw);
+  } @else if $v == h {
+    @return (($percen / 1080) * 100vh);
+  }
+}
+
+@function calrcontainer($percen) {
+  @return (($percen / (1920 - 350)) * 100%);
+}

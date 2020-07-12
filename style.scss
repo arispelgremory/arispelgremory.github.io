@@ -1,0 +1,229 @@
+@import "general";
+@import "animation";
+@import "nav";
+@import "function";
+
+.right-container {
+  min-height: 100vh;
+  width: 82vw;
+  margin-left: 18vw;
+  background: url("../img/bg/top-bg.jpg") no-repeat;
+  background-size: cover;
+  .title-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title {
+      width: cal(800, w);
+      height: cal(398, h);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      img {
+        position: absolute;
+        width: cal(900, w);
+      }
+      h1 {
+        .ttl1-e {
+          font-size: cal(80, w);
+          @extend .red;
+        }
+        .ttl1-c {
+          font-size: cal(76, w);
+          @extend .red;
+        }
+      }
+      h2 {
+        @extend .blue;
+        font-size: cal(53, w);
+        span {
+          font-size: cal(40, w);
+        }
+      }
+    }
+  }
+
+  .right-content-wrapper {
+    max-width: calrcontainer(900);
+    margin: auto;
+    .self-intro-container,
+    .website-intro-container {
+      margin: auto;
+      max-width: calrcontainer(900);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 15vh;
+      .title {
+        margin-bottom: 2.5vw;
+        img {
+          width: cal(400, w);
+        }
+      }
+      .content {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 36px 36px;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        img {
+          position: absolute;
+          max-width: calrcontainer(900);
+          z-index: 0;
+        }
+        p {
+          z-index: 2;
+          margin-top: 10px;
+          max-width: 98%;
+        }
+      }
+    }
+    .website-intro-container {
+      margin-top: 200px;
+      .content {
+        font-family: w6;
+        font-size: 20px;
+        min-width: 400px;
+        p {
+          @extend .blue;
+          &:nth-child(3) {
+            margin-top: 0;
+          }
+          span {
+            @extend .red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 1440px) {
+  .right-container .right-content-wrapper {
+    max-width: unset;
+  }
+}
+
+@media only screen and(max-width: 1000px) {
+  .right-container .right-content-wrapper {
+    .self-intro-container {
+      .content {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .website-intro-container {
+      .content {
+        p {
+          display: inline;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content-wrapper {
+    .right-container {
+      width: 100vw;
+      margin: 0;
+      .title-container {
+        .title {
+          width: 100%;
+          img {
+            width: auto;
+          }
+          h1.w6 {
+            .ttl1-e {
+              font-size: 45px;
+            }
+            .ttl1-c {
+              font-size: 41px;
+            }
+          }
+          h2.w6 {
+            font-size: 32px;
+            span {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+      .right-content-wrapper {
+        .self-intro-container,
+        .website-intro-container {
+          max-width: 80%;
+          .title {
+            img {
+              width: 330px;
+              height: auto;
+            }
+          }
+          .content {
+            img {
+              width: 80%;
+              max-width: none;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .website-intro-container {
+        .content {
+          p {
+            font-size: 20px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-wrapper {
+    .right-container {
+      .title-container {
+        .title {
+          img {
+            width: 95%;
+          }
+          h1.w6 {
+            .ttl1-e {
+              font-size: 25px;
+            }
+            .ttl1-c {
+              font-size: 23px;
+            }
+          }
+          h2.w6 {
+            font-size: 20px;
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .self-intro-container,
+      .website-intro-container {
+        .title {
+          img {
+            max-width: 270px;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
