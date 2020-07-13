@@ -141,7 +141,7 @@
         .title {
           width: 100%;
           img {
-            width: auto;
+            width: 95%;
           }
           h1.w6 {
             .ttl1-e {
@@ -164,6 +164,7 @@
         .website-intro-container {
           max-width: 80%;
           .title {
+            margin-bottom: 60px;
             img {
               width: 330px;
               height: auto;
@@ -173,17 +174,18 @@
             img {
               width: 80%;
               max-width: none;
+              min-height: 300px;
             }
             p {
               font-size: 16px;
             }
           }
         }
-      }
-      .website-intro-container {
-        .content {
-          p {
-            font-size: 20px !important;
+        .website-intro-container {
+          .content {
+            p {
+              font-size: 20px;
+            }
           }
         }
       }
@@ -196,31 +198,60 @@
     .right-container {
       .title-container {
         .title {
-          img {
-            width: 95%;
-          }
           h1.w6 {
             .ttl1-e {
-              font-size: 25px;
+              font-size: 23px;
             }
             .ttl1-c {
-              font-size: 23px;
+              font-size: 20px;
             }
           }
           h2.w6 {
-            font-size: 20px;
+            font-size: 16px;
             span {
-              font-size: 15px;
+              font-size: 14px;
             }
           }
         }
       }
-      .self-intro-container,
-      .website-intro-container {
-        .title {
-          img {
-            max-width: 270px;
-            margin: auto;
+      .right-content-wrapper {
+        .self-intro-container,
+        .website-intro-container {
+          max-width: 270px;
+          .title {
+            margin-bottom: 50px;
+            width: 270px;
+            img {
+              width: 270px;
+            }
+          }
+          .content {
+            max-width: 296px;
+            padding: 0;
+            img {
+              width: 95%;
+            }
+          }
+        }
+        .website-intro-container {
+          .content {
+            min-width: unset;
+            img {
+              height: 427px;
+            }
+            p {
+              margin: 30px 17px 0 17px;
+            }
+            p:nth-child(3) {
+              margin-top: 0;
+            }
+          }
+        }
+        .self-intro-container {
+          .content {
+            p {
+              line-height: 2;
+            }
           }
         }
       }

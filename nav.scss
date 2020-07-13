@@ -87,6 +87,14 @@
   & img:hover {
     @extend .onigiri;
   }
+  img {
+    &.Menu {
+      display: none;
+    }
+    &.btt {
+      display: none;
+    }
+  }
 }
 .navbar.mobile {
   animation: bounceInLeft 0.5s;
@@ -96,6 +104,7 @@
   width: 100%;
   z-index: 99;
   .navbar-wrapper {
+    overflow-y: scroll;
     .logo {
       margin-left: 0;
       img {
@@ -111,7 +120,7 @@
         "p3 p8"
         "p4 p9"
         "p5 p5";
-      padding: 0 50px;
+      margin: 0 50px;
       li {
         padding: 0;
         @for $i from 1 to 9 {
@@ -157,6 +166,9 @@
     img {
       width: 100px;
       height: auto;
+      &.Menu {
+        display: block;
+      }
     }
   }
 
@@ -173,6 +185,16 @@
     display: none;
   }
 
+  .content-wrapper {
+    .navbar.mobile {
+      .navbar-wrapper {
+        ul.list {
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+
   .footer {
     width: 100%;
     max-width: none;
@@ -182,6 +204,55 @@
     }
     .content {
       font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-wrapper {
+    .navbar.mobile {
+      .navbar-wrapper {
+        .logo {
+          img {
+            width: 70px;
+          }
+        }
+        ul.list {
+          max-width: 275px;
+          margin: 5vh auto;
+          li {
+            span.nav-eng {
+              font-size: 20px;
+            }
+            span.nav-cn {
+              font-size: 13px;
+            }
+            &:nth-last-child(1) {
+              margin-right: 0;
+              span.nav-eng {
+                font-size: 14px;
+              }
+              span.nav-cn {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .content {
+      font-size: 9px;
+      text-align: center;
+      max-width: 210px;
+    }
+  }
+  #nav-btn {
+    height: 60px;
+    width: 60px;
+    img {
+      width: 60px;
     }
   }
 }
