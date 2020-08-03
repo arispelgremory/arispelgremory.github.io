@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/CSSRulePlugin.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script defer src="js/swup.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script defer src="js/ani.js"></script>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="navbar">
+        <div class="navbar-wrapper">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="" /></a>
+          </div>
+          <ul class="list">
+            <li>
+              <a href="index.html"><span class="nav-eng">Top</span>&nbsp;<span class="nav-cn">網頁主頁</span></a>
+            </li>
+            <li>
+              <a href="profile.html"><span class="nav-eng">Profile</span>&nbsp;<span class="nav-cn">個人資料</span></a>
+            </li>
+            <li class="selected">
+              <a href="Interest.html"><span class="nav-eng">Interests</span>&nbsp;<span class="nav-cn">個人興趣</span></a>
+            </li>
+            <li>
+              <a href="FavAni.html"><span class="nav-eng">Fav Anime</span>&nbsp;<span class="nav-cn">喜歡的動畫</span></a>
+            </li>
+            <li>
+              <a href="FavChar.html"><span class="nav-eng">Fav Characters</span>&nbsp;<span class="nav-cn">喜歡的角色</span></a>
+            </li>
+            <li>
+              <a href="FavSongs.html"><span class="nav-eng">Fav Songs</span>&nbsp;<span class="nav-cn">喜歡的歌曲</span></a>
+            </li>
+            <li>
+              <a href="FavSinger.html"><span class="nav-eng">Fav Singers</span>&nbsp;<span class="nav-cn">喜歡的歌手</span></a>
+            </li>
+            <li>
+              <a href="ContactMe.html"><span class="nav-eng">Contact Me</span>&nbsp;<span class="nav-cn">聯絡我</span></a>
+            </li>
+            <li>
+              <a href=""><span class="nav-eng">Psychology Test</span>&nbsp;<span class="nav-cn">心理測驗</span></a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a href="https://www.instagram.com/gremoryyxx2/"><img src="img/ig.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/gremoryyx/"><img src="img/fb.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/gremoryyx"><img src="img/tw.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-container interest" id="swup">
+        <div class="right-container-wrapper">
+          <div class="page-title-container">
+            <div class="page-title">
+              <img src="../img/icon/redclover.png" alt="" />
+              <div class="content red">
+                <h2>Interests</h2>
+                <h2>個人興趣</h2>
+              </div>
+              <img src="../img/icon/redclover.png" alt="" />
+            </div>
+            <div class="sub-title blue">
+              <p>Those things are the things that I do when I'm free</p>
+              <p>這些都是我得空的時候會做的事情</p>
+            </div>
+          </div>
+          <div class="page-content-container">
+            <div class="content GM">
+              <div class="content-wrapper">
+                <div class="content1-top">
+                  <p>Those are the games that I‘ve play.</p>
+                  <p>以下的都是我有玩的遊戲</p>
+                </div>
+                <div class="content1-mid">
+                  <div class="subtitle">
+                    <p>Computer Games <span>電腦遊戲</span></p>
+                  </div>
+                  <ul>
+                    <li>
+                      <p>League of Legends<span>英雄聯盟</span></p>
+                    </li>
+                    <li>
+                      <p>Monster Hunter: World<span>魔物獵人：世界</span></p>
+                    </li>
+                    <li>
+                      <p>Grand Theft Auto V<span>俠盜獵車手V</span></p>
+                    </li>
+                    <li>
+                      <p>Gartic.io<span>你畫我猜</span></p>
+                    </li>
+                    <li>
+                      <p>Japanese Mahjong<span>日本麻將</span></p>
+                    </li>
+                    <li>
+                      <p>osu</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content1-btm">
+                  <div class="subtitle">
+                    <p>Mobile Games <span>手機遊戲</span></p>
+                  </div>
+                  <ul>
+                    <li>
+                      <p>Princess Connect Re:Dive<span>超異域公主鏈接Re:Dive</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content RGV">
+              <div class="content1-2-wrapper">
+                <div class="content1-2-top blue">
+                  <h2>Random Gaming Video 隨機遊戲影片</h2>
+                </div>
+                <div class="content1-2-body">
+                  <div class="left">
+                    <img src="img/Interest/leftarrow.png" alt="" />
+                  </div>
+                  <div class="mid">
+                    <iframe src="https://www.youtube.com/embed/Vskthz1ELPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="right">
+                    <img src="img/Interest/rightarrow.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content DP">
+              <div class="content-wrapper">
+                <div class="content-top">
+                  <p>Sometimes I'll do digital painting when i'm free.</p>
+                  <p>我偶爾得空的時候會練習電繪</p>
+                </div>
+
+                <div class="content-btm">
+                  <div class="subtitle">
+                    <p>Still learning <span>目前還在學習當中</span></p>
+                  </div>
+                  <img src="img/Interest/DPcontent.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="content CD">
+              <div class="content-wrapper">
+                <div class="content-top">
+                  <p>I personally think that coding is very interesting.</p>
+                  <p>我個人覺得編程非常有趣</p>
+                </div>
+
+                <div class="content-btm">
+                  <div class="subtitle">
+                    <p>Here's are the languages I can code. <span>以下是我會寫的程序語言</span></p>
+                  </div>
+                  <ul>
+                    <li><img src="img/Interest/html.png" /></li>
+                    <li><img src="img/Interest/css.png" /></li>
+                    <li><img src="img/Interest/js.png" /></li>
+                    <li><img src="img/Interest/java.png" /></li>
+                    <li><img src="img/Interest/python.png" /></li>
+                    <li><img src="img/Interest/php.png" /></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content TV">
+              <div class="content-wrapper">
+                <div class="content-top">
+                  <p>I like to travel, especially travelling to Japan</p>
+                  <p>我個人喜歡去旅行 尤其是去日本旅行</p>
+                </div>
+
+                <div class="content-btm">
+                  <div class="subtitle">
+                    <p>Here's are the places I've been going <span>以下是我去過的地方</span></p>
+                  </div>
+                  <ul>
+                    <li>Thailand - Hatyai, Bangkok <span>泰國 - 合艾, 曼谷</span></li>
+                    <li>Taiwan - Taipei <span>台灣 - 台北</span></li>
+                    <li>Japan - Tokyo <span>日本 - 東京</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content RTV">
+              <div class="content1-2-wrapper">
+                <div class="content1-2-top blue">
+                  <h2>Random Travelling Photos 隨機旅行照片</h2>
+                </div>
+                <div class="content1-2-body">
+                  <div class="mid slider">
+                    <div class="img1">
+                      <img src="img/Interest/TV-img/img1.JPG" alt="" />
+                    </div>
+                    <div class="img2">
+                      <img src="img/Interest/TV-img/img2.JPG" alt="" />
+                    </div>
+                    <div class="img3">
+                      <img src="img/Interest/TV-img/img3.JPG" alt="" />
+                    </div>
+                    <div class="img4">
+                      <img src="img/Interest/TV-img/img4.JPG" alt="" />
+                    </div>
+                    <div class="img5">
+                      <img src="img/Interest/TV-img/img5.JPG" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="nav-btn">
+            <img src="../img/Menu.png" alt="" class="Menu" />
+            <img src="../img/btt-btn.png" alt="" class="btt" />
+          </div>
+          <div class="footer">
+            <div class="btt-btn">
+              <img src="../img/btt-btn.png" alt="" />
+            </div>
+            <div class="content">
+              © Made By Chong Tik Joe(1950347-DWD) for TWEB333- Advanced Web Design, NEUC 2020
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/slideshow.js"></script>
+  </body>
+</html>

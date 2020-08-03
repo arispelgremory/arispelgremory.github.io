@@ -3,29 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chong Tik Joe's Personal Website | Home</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/CSSRulePlugin.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <script defer src="js/swup.min.js"></script>
     <script defer src="js/ani.js"></script>
+    <script src="js/Psytest.js"></script>
   </head>
   <body>
-    <div class="loading loading-in ready"></div>
-    <div class="loading loading-out ready">
-      <div id="loading_character" class="ready">
-        <div class="charcter-container char03"></div>
-        <div class="textloading">
-          <span class="iconloading"> <img src="img/icon-loading.png" alt="" width="16px" height="16px" /> </span>
-          <span>
-            <img src="img/text-loading.png" alt="" width="88px" height="20px" />
-          </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="content-wrapper" style="display: none;">
+    <div class="content-wrapper PsyTest">
       <div class="navbar">
         <div class="navbar-wrapper">
           <div class="logo">
@@ -73,49 +61,40 @@
           </ul>
         </div>
       </div>
-      <div class="right-container swoopInRight Home" id="swup">
-        <div class="title-container">
+      <div class="right-container PsyTest" id="swup">
+        <div class="right-container-wrapper">
           <div class="title">
-            <div class="title-content">
-              <div class="title-top">
-                <img src="img/bg/title-bg-top.png" alt="" />
+            <div class="title-container">
+              <img src="img/PsyTest/titlex.png" alt="" />
+            </div>
+          </div>
+          <div class="question">
+            <div class="question-container">
+              <div class="user-info">
+                <form action="" id="formx">
+                  <div class="name">
+                    <label for="Name">Name 名字:</label>
+                    <input type="text" name="Name" />
+                  </div>
+                  <div class="email">
+                    <label for="Email">Email 電子郵件:</label>
+                    <input type="text" name="Email" /> <br />
+                  </div>
+                  <button id="userSubmit"></button>
+                </form>
               </div>
-              <div class="title-center">
-                <img src="img/bg/title-bg-left.png" alt="" />
-                <div class="title-content-text">
-                  <h1 class="w6"><span class="ttl1-e">Hi,&nbsp;</span><span class="ttl1-c">嗨</span></h1>
-                  <h2 class="w6">
-                    Welcome To My Website
-                    <br />
-                    <span>歡迎來到我的網站</span>
-                  </h2>
+              <div class="select-q">
+                <div class="select-q-container">
+                  <div class="sub-title">
+                    <p class="blue">Which psychology test you want to take?</p>
+                    <p class="blue">你想要做哪個心理測驗?</p>
+                  </div>
+                  <div class="buttons">
+                    <button id="test1"></button>
+                    <button id="test2"></button>
+                  </div>
                 </div>
-                <img src="img/bg/title-bg-right.png" alt="" />
               </div>
-              <div class="title-btm">
-                <img src="img/bg/title-bg-btm.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="right-content-wrapper">
-          <div class="self-intro-container">
-            <div class="title">
-              <img src="./img/selfintrotitle.png" alt="" />
-            </div>
-            <div class="content">
-              <p>嗨, 我叫迪祖，歡迎來到我的網站，在這裡主要是介紹我自己 順帶一點心理測驗。在這裡你大概可以看到關於我的背景和興趣之類的。</p>
-              <p>Hi, my name is Tik Joe, welcome to my website. This website is mainly for introduce myself with some psychology tests. Thus, you can briefly know about my background and interests.</p>
-            </div>
-          </div>
-          <div class="website-intro-container">
-            <div class="title">
-              <img src="img/websiteintro.png" alt="" />
-            </div>
-            <div class="content">
-              <p>本網站是為了來<span>自我介紹</span>與<span>心理測驗</span></p>
-              <p>和單純<span>學業用途</span>所製作出來的</p>
-              <p>This website is purely made for <span>Self Introduction, Psychological Tests & Academic Purposes</span> only</p>
             </div>
           </div>
         </div>
@@ -127,11 +106,11 @@
             © Made By Chong Tik Joe(1950347-DWD) for TWEB333- Advanced Web Design, NEUC 2020
           </div>
         </div>
-      </div>
-      <div id="nav-btn">
-        <img src="img/Menu.png" alt="" class="Menu" />
-        <img src="img/btt-btn.png" alt="" class="btt" />
+        <div id="nav-btn">
+          <img src="img/Menu.png" alt="" class="Menu" />
+        </div>
       </div>
     </div>
   </body>
 </html>
+<div class="question2-1"></div>

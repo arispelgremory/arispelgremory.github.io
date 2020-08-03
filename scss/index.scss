@@ -1,14 +1,13 @@
+@import "function";
 @import "general";
 @import "animation";
-@import "nav";
-@import "function";
 
-.right-container {
-  min-height: 100vh;
-  width: 82vw;
-  margin-left: 18vw;
+.Home {
   background: url("../img/bg/top-bg.jpg") no-repeat;
   background-size: cover;
+}
+
+.right-container {
   .title-container {
     height: 100vh;
     width: 100%;
@@ -16,33 +15,47 @@
     align-items: center;
     justify-content: center;
     .title {
-      width: cal(800, w);
-      height: cal(398, h);
-      background-size: cover;
+      width: 100%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center;
-      img {
-        position: absolute;
-        width: cal(900, w);
-      }
-      h1 {
-        .ttl1-e {
-          font-size: cal(80, w);
-          @extend .red;
+
+      .title-content {
+        width: 80%;
+        min-width: 550px;
+        .title-top,
+        .title-btm {
+          margin: 20px auto;
         }
-        .ttl1-c {
-          font-size: cal(76, w);
-          @extend .red;
-        }
-      }
-      h2 {
-        @extend .blue;
-        font-size: cal(53, w);
-        span {
-          font-size: cal(40, w);
+        .title-center {
+          display: flex;
+          justify-content: space-between;
+          img {
+            height: 50%;
+            margin: auto;
+          }
+          .title-content-text {
+            h1 {
+              .ttl1-e {
+                font-size: 80px;
+                @extend .red;
+              }
+              .ttl1-c {
+                font-size: 76px;
+                @extend .red;
+              }
+            }
+            h2 {
+              @extend .blue;
+              font-size: 53px;
+              span {
+                font-size: 40px;
+              }
+            }
+          }
         }
       }
     }
@@ -61,6 +74,7 @@
       margin-bottom: 15vh;
       .title {
         margin-bottom: 2.5vw;
+
         img {
           width: cal(400, w);
         }
@@ -74,11 +88,8 @@
         font-size: 16px;
         justify-content: center;
         align-items: center;
-        img {
-          position: absolute;
-          max-width: calrcontainer(900);
-          z-index: 0;
-        }
+        background: url(../img/frame1.png) no-repeat;
+        background-size: 100% 100%;
         p {
           z-index: 2;
           margin-top: 10px;
@@ -106,43 +117,94 @@
   }
 }
 
-@media only screen and(max-width: 1440px) {
+@media only screen and(max-width: 1480px) {
   .right-container .right-content-wrapper {
     max-width: unset;
   }
-}
 
-@media only screen and(max-width: 1000px) {
-  .right-container .right-content-wrapper {
-    .self-intro-container {
-      .content {
-        p {
-          font-size: 12px;
-        }
-      }
-    }
-    .website-intro-container {
-      .content {
-        p {
-          display: inline;
-          font-size: 16px;
+  .right-container {
+    .title-container {
+      .title {
+        .title-content {
+          .title-top,
+          .title-btm {
+            img {
+              width: 200px;
+              margin: 15px;
+            }
+          }
+          .title-center {
+            img {
+              height: 115px;
+            }
+            .title-content-text {
+              h1 {
+                .ttl1-e {
+                  font-size: 55px;
+                }
+                .ttl1-c {
+                  font-size: 50px;
+                }
+              }
+              h2 {
+                font-size: 30px;
+                span {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 }
 
+@media only screen and(max-width: 1024px) {
+  .right-container {
+    .title-container {
+      .title {
+        .title-content {
+          .title-top,
+          .title-btm {
+            img {
+              width: 150px;
+            }
+          }
+          .title-center {
+            img {
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+    .right-content-wrapper {
+      .self-intro-container {
+        .content {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .website-intro-container {
+        .content {
+          p {
+            display: inline;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   .content-wrapper {
     .right-container {
-      width: 100vw;
-      margin: 0;
       .title-container {
         .title {
           width: 100%;
-          img {
-            width: 95%;
-          }
+
           h1.w6 {
             .ttl1-e {
               font-size: 45px;
@@ -198,18 +260,37 @@
     .right-container {
       .title-container {
         .title {
-          h1.w6 {
-            .ttl1-e {
-              font-size: 23px;
+          .title-content {
+            max-width: 298px;
+            min-width: fit-content;
+            .title-top,
+            .title-btm {
+              margin: 10px auto;
+              img {
+                width: 61px;
+              }
             }
-            .ttl1-c {
-              font-size: 20px;
-            }
-          }
-          h2.w6 {
-            font-size: 16px;
-            span {
-              font-size: 14px;
+            .title-center {
+              img {
+                height: 42px;
+                margin: auto 10px;
+              }
+              .title-content-text {
+                h1 {
+                  .ttl1-e {
+                    font-size: 30px;
+                  }
+                  .ttl1-c {
+                    font-size: 25px;
+                  }
+                }
+                h2 {
+                  font-size: 18px;
+                  span {
+                    font-size: 16px;
+                  }
+                }
+              }
             }
           }
         }
@@ -221,6 +302,7 @@
           .title {
             margin-bottom: 50px;
             width: 270px;
+
             img {
               width: 270px;
             }
@@ -228,6 +310,8 @@
           .content {
             max-width: 296px;
             padding: 0;
+            background: url(../img/frame1m.png) no-repeat;
+            background-size: 100% 100%;
             img {
               width: 95%;
             }

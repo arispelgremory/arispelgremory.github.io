@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/CSSRulePlugin.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="js/soundmanager2-jsmin.js"></script>
+    <script defer src="js/swup.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script defer src="js/ani.js"></script>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="navbar">
+        <div class="navbar-wrapper">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="" /></a>
+          </div>
+          <ul class="list">
+            <li>
+              <a href="index.html"><span class="nav-eng">Top</span>&nbsp;<span class="nav-cn">網頁主頁</span></a>
+            </li>
+            <li>
+              <a href="profile.html"><span class="nav-eng">Profile</span>&nbsp;<span class="nav-cn">個人資料</span></a>
+            </li>
+            <li>
+              <a href="Interest.html"><span class="nav-eng">Interests</span>&nbsp;<span class="nav-cn">個人興趣</span></a>
+            </li>
+            <li>
+              <a href="FavAni.html"><span class="nav-eng">Fav Anime</span>&nbsp;<span class="nav-cn">喜歡的動畫</span></a>
+            </li>
+            <li>
+              <a href="FavChar.html"><span class="nav-eng">Fav Characters</span>&nbsp;<span class="nav-cn">喜歡的角色</span></a>
+            </li>
+            <li class="selected">
+              <a href="FavSongs.html"><span class="nav-eng">Fav Songs</span>&nbsp;<span class="nav-cn">喜歡的歌曲</span></a>
+            </li>
+            <li>
+              <a href="FavSinger.html"><span class="nav-eng">Fav Singers</span>&nbsp;<span class="nav-cn">喜歡的歌手</span></a>
+            </li>
+            <li>
+              <a href="ContactMe.html"><span class="nav-eng">Contact Me</span>&nbsp;<span class="nav-cn">聯絡我</span></a>
+            </li>
+            <li>
+              <a href=""><span class="nav-eng">Psychology Test</span>&nbsp;<span class="nav-cn">心理測驗</span></a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a href="https://www.instagram.com/gremoryyxx2/"><img src="img/ig.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/gremoryyx/"><img src="img/fb.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/gremoryyx"><img src="img/tw.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-container FavSongs" id="swup">
+        <div class="right-container-wrapper">
+          <div class="page-title-container">
+            <div class="page-title">
+              <img src="img/icon/blueclover.png" alt="" />
+              <div class="content blue">
+                <h2>Favourite Song</h2>
+                <h2>喜歡的歌曲</h2>
+              </div>
+              <img src="img/icon/blueclover.png" alt="" />
+            </div>
+          </div>
+          <div class="page-content-container">
+            <div class="song song1">
+              <div class="song-container">
+                <div class="song-part-top">
+                  <div class="top-img">
+                    <img src="img/FavSongs/kawakiwoameku.jpg" alt="" />
+                  </div>
+                  <div class="top-title">
+                    <ul>
+                      <li>
+                        <h2>Vocal 歌手:</h2>
+                        <p>Minami 美波</p>
+                      </li>
+                      <li>
+                        <h2>Lyrics 作詞:</h2>
+                        <p>Minami 美波</p>
+                      </li>
+                      <li>
+                        <h2>Compose 作曲:</h2>
+                        <p>Minami 美波</p>
+                      </li>
+                    </ul>
+                    <div class="btn">
+                      <img src="img/FavSongs/Play.png" alt="" class="play" />
+                      <img src="img/FavSongs/Pause.png" alt="" class="pause" />
+                    </div>
+                  </div>
+                </div>
+                <div class="song-part-btm">
+                  <p class="en">
+                    Kawaki wo Ameku (カワキヲアメク) is the major debut single by Minami. It was released on January 30, 2019, and peaked at #14 on the Oricon single chart.
+                  </p>
+                  <p class="cn">
+                    Kawaki wo Ameku（カワキヲアク）是Minami的主要首张单曲。它发布于2019年1月30日，在Oricon单张图表上达到第14位的峰值。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="song song2">
+              <div class="song-container">
+                <div class="song-part-top">
+                  <div class="top-img">
+                    <img src="img/FavSongs/yorunikakeru.jpg" alt="" />
+                  </div>
+                  <div class="top-title">
+                    <ul>
+                      <li>
+                        <h2>Vocal 歌手:</h2>
+                        <p>Ikura</p>
+                      </li>
+                      <li>
+                        <h2>Lyrics 作詞:</h2>
+                        <p>Ayase</p>
+                      </li>
+                      <li>
+                        <h2>Compose 作曲:</h2>
+                        <p>Ayase</p>
+                      </li>
+                    </ul>
+                    <div class="btn">
+                      <img src="img/FavSongs/Play.png" alt="" class="play" />
+                      <img src="img/FavSongs/Pause.png" alt="" class="pause" />
+                    </div>
+                  </div>
+                </div>
+                <div class="song-part-btm">
+                  <p class="en">"Run at night" (Yorunikakeru) is a song by Japanese music unit YOASOBI. Released as the first delivery-only single on December 15, 2019</p>
+                  <p class="cn">
+                    “晚上跑步”（Yorunikakeru）是日本音乐单位YOASOBI演唱的歌曲。作为第一个发行 在2019年12月15日發佈
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="song song3">
+              <div class="song-container">
+                <div class="song-part-top">
+                  <div class="top-img">
+                    <img src="img/FavSongs/historia.jpg" alt="" />
+                  </div>
+                  <div class="top-title">
+                    <ul>
+                      <li>
+                        <h2>Vocal 歌手:</h2>
+                        <p>CHiCO</p>
+                      </li>
+                      <li>
+                        <h2>Lyrics 作詞:</h2>
+                        <p>HoneyWorks</p>
+                      </li>
+                      <li>
+                        <h2>Compose 作曲:</h2>
+                        <p>HoneyWorks</p>
+                      </li>
+                    </ul>
+                    <div class="btn">
+                      <img src="img/FavSongs/Play.png" alt="" class="play" />
+                      <img src="img/FavSongs/Pause.png" alt="" class="pause" />
+                    </div>
+                  </div>
+                </div>
+                <div class="song-part-btm">
+                  <p class="en">Historia (ヒストリア) is the included song within the album that've released by CHiCO with HoneyWorks at 5 August 2015.</p>
+                  <p class="cn">Historia（ヒストリア）是該專輯發行的其中一首歌曲，由CHiCO與HoneyWorks在2015年8月5日發行。</p>
+                </div>
+              </div>
+            </div>
+            <div class="song song4">
+              <div class="song-container">
+                <div class="song-part-top">
+                  <div class="top-img">
+                    <img src="img/FavSongs/Marigold.jpg" alt="" />
+                  </div>
+                  <div class="top-title">
+                    <ul>
+                      <li>
+                        <h2>Vocal 歌手:</h2>
+                        <p>あいみょん　Aimyon</p>
+                      </li>
+                      <li>
+                        <h2>Lyrics 作詞:</h2>
+                        <p>あいみょん　Aimyon</p>
+                      </li>
+                      <li>
+                        <h2>Compose 作曲:</h2>
+                        <p>あいみょん　Aimyon</p>
+                      </li>
+                    </ul>
+                    <div class="btn">
+                      <img src="img/FavSongs/Play.png" alt="" class="play" />
+                      <img src="img/FavSongs/Pause.png" alt="" class="pause" />
+                    </div>
+                  </div>
+                </div>
+                <div class="song-part-btm">
+                  <p class="en">
+                    "Marigold" (マリゴールド) is Aimyon's fifth major single. It was released on August 8, 2018 from the label "unBORDE" in Warner Music Japan.
+                  </p>
+                  <p class="cn">
+                    “萬壽菊”（マリゴールド）是Aimyon的第五支主要單曲。被釋放了 於2018年8月8日在日本華納音樂中以“ unBORDE”標籤發行。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="song song5">
+              <div class="song-container">
+                <div class="song-part-top">
+                  <div class="top-img">
+                    <img src="img/FavSongs/daddydaddydo.jpg" alt="" />
+                  </div>
+                  <div class="top-title">
+                    <ul>
+                      <li>
+                        <h2>Vocal 歌手:</h2>
+                        <p>鈴木雅之 Suzuki Masayuki</p>
+                      </li>
+                      <li>
+                        <h2>Lyrics 作詞:</h2>
+                        <p>鈴木雅之 Suzuki Masayuki</p>
+                      </li>
+                      <li>
+                        <h2>Compose 作曲:</h2>
+                        <p>鈴木雅之 Suzuki Masayuki</p>
+                      </li>
+                    </ul>
+                    <div class="btn">
+                      <img src="img/FavSongs/Play.png" alt="" class="play" />
+                      <img src="img/FavSongs/Pause.png" alt="" class="pause" />
+                    </div>
+                  </div>
+                </div>
+                <div class="song-part-btm">
+                  <p class="en">DADDY! DADDY! DO! feat. Suzuki Airi (DADDY! DADDY! DO! feat. 鈴木愛理) is a single by Suzuki Masayuki featuring soloist and former ℃-ute member Suzuki Airi. It was released on April 15, 2020.</p>
+                  <p class="cn">DADDY！DADDY！DO！feat.鈴木愛理 是鈴木雅之（Suzuki Masayuki）的單曲，具有獨奏者和前℃-ute成員鈴木愛理它於2020年4月15日發布。</p>
+                </div>
+              </div>
+            </div>
+            <div class="song song6">
+              <div class="song-container">
+                <div class="song-part-top">
+                  <div class="top-img">
+                    <img src="img/FavSongs/SK.jpg" alt="" />
+                  </div>
+                  <div class="top-title">
+                    <ul>
+                      <li>
+                        <h2>Vocal 歌手:</h2>
+                        <p>野水いおり Nomizu Iori</p>
+                      </li>
+                      <li>
+                        <h2>Lyrics 作詞:</h2>
+                        <p>manzo</p>
+                      </li>
+                      <li>
+                        <h2>Compose 作曲:</h2>
+                        <p>manzo</p>
+                      </li>
+                    </ul>
+                    <div class="btn">
+                      <img src="img/FavSongs/Play.png" alt="" class="play" />
+                      <img src="img/FavSongs/Pause.png" alt="" class="pause" />
+                    </div>
+                  </div>
+                </div>
+                <div class="song-part-btm">
+                  <p class="en">
+                    The opening song for the anime "Coffin Princess Chaika AVENGING BATTLE,"which she also appears as a voice actor, is a hard rocking number like manzo that runs through profoundly with repeated tempo changes. The singing you can hear here and the provocative singing of "Trick Star", who wrote the lyrics, seemed to leave youthfulness, with a faint sex appeal.
+                  </p>
+                  <p class="cn">
+                    她還為動漫《棺材公主查卡·復仇之戰》開場。像配音演員一樣出現，是一個像manzo一樣堅不可摧的數字反復改變節奏。您可以在這裡聽到的歌聲和挑釁的歌聲 歌詞的“ Trick Star”的歌詞似乎散發出青春的氣息，帶有淡淡的性感。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="song song7">
+              <div class="song-container">
+                <div class="song-part-top">
+                  <div class="top-img">
+                    <img src="img/FavSongs/Amewomatsu.jpg" alt="" />
+                  </div>
+                  <div class="top-title">
+                    <ul>
+                      <li>
+                        <h2>Vocal 歌手:</h2>
+                        <p>Minami 美波</p>
+                      </li>
+                      <li>
+                        <h2>Lyrics 作詞:</h2>
+                        <p>Minami 美波</p>
+                      </li>
+                      <li>
+                        <h2>Compose 作曲:</h2>
+                        <p>Minami 美波</p>
+                      </li>
+                    </ul>
+                    <div class="btn">
+                      <img src="img/FavSongs/Play.png" alt="" class="play" />
+                      <img src="img/FavSongs/Pause.png" alt="" class="pause" />
+                    </div>
+                  </div>
+                </div>
+                <div class="song-part-btm">
+                  <p class="en">
+                    After a year and a half, singer-songwriter Minami finally returned with her new song "Waiting for the Rain". One week after the launch of the MV, the number of viewers rushed to 1.7 million. It can be seen that her popularity has not diminished. In addition to releasing new songs, Minami also announced her move to Warner Records. , Everyone can hear it on the streaming platform for the first time.
+                  </p>
+                  <p class="cn">
+                    暌違一年半，創作歌手美波終於帶著她的新歌「等待雨、」回來了。 MV推出一個禮拜，觀看量就衝到170萬， 可見她的人氣絲毫未減，而除了發佈新歌外，美波也宣佈移籍到華納唱片公司，可以說是喜事一件，因為代表日後美波有新歌的話，大家都能第一時間在串流平台上聽到了。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="nav-btn">
+            <img src="img/Menu.png" alt="" class="Menu" />
+            <img src="img/btt-btn.png" alt="" class="btt" />
+          </div>
+          <div class="footer">
+            <div class="btt-btn">
+              <img src="img/btt-btn.png" alt="" />
+            </div>
+            <div class="content">
+              © Made By Chong Tik Joe(1950347-DWD) for TWEB333- Advanced Web Design, NEUC 2020
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/slideshow.js"></script>
+  </body>
+</html>

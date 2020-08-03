@@ -1,0 +1,532 @@
+@import "animation";
+@import "function";
+
+.interest {
+  background: url(../img/bg/interest-bg.png) no-repeat;
+  background-size: contain;
+}
+
+.right-container.interest {
+  .right-container-wrapper {
+    .page-title-container {
+      height: 100vh;
+      .sub-title {
+        margin-top: 20px;
+        P {
+          text-align: center;
+        }
+      }
+    }
+    .page-content-container {
+      .content {
+        max-width: 900px;
+        margin: 75px auto;
+        width: 80%;
+        background-size: 100% 100% !important;
+        height: 654px;
+        .content-wrapper {
+          padding-top: 12%;
+          padding-left: 20px;
+        }
+      }
+
+      .content.GM {
+        background: url(../img/Interest/Gaming.png) no-repeat;
+        .content-wrapper {
+          .subtitle {
+            margin: 20px 0 10px 0;
+
+            p {
+              display: inline;
+              border-bottom: 1px solid #000;
+            }
+          }
+          span {
+            margin-left: 5px;
+          }
+          p {
+            font-family: "Quicksand";
+            font-weight: bold;
+            font-size: 25px;
+          }
+          ul {
+            li {
+              p {
+                display: inline;
+                vertical-align: middle;
+              }
+              &:before {
+                content: "\26aa";
+                line-height: 24px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+
+      .content.RGV,
+      .RTV {
+        height: fit-content;
+        .content1-2-top {
+          margin-bottom: 50px;
+          h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            word-break: keep-all;
+            &::before {
+              width: 35px;
+              content: " ";
+              background: url(../img/Interest/border-left.png) no-repeat;
+              background-size: contain;
+              margin-right: 5vw;
+              height: 70px;
+            }
+            &::after {
+              width: 35px;
+              content: " ";
+              background: url(../img/Interest/border-right.png) no-repeat;
+              background-size: contain;
+              margin-left: 5vw;
+              height: 70px;
+            }
+          }
+        }
+        .content1-2-body {
+          background: url(../img/frame1.png) no-repeat;
+          background-size: 100% 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 330px;
+          iframe {
+            height: 300px;
+            width: 500px;
+          }
+        }
+      }
+
+      .content.DP,
+      .CD {
+        background: url(../img/Interest/DP.png) no-repeat;
+        .content-wrapper {
+          .content-top {
+            margin-bottom: 30px;
+            p {
+              &:nth-child(1) {
+                font-size: 30px;
+              }
+              &:nth-child(2) {
+                font-size: 25px;
+              }
+            }
+          }
+          .content-btm {
+            .subtitle {
+              p {
+                font-weight: bold;
+                font-family: "Quicksand";
+                font-size: 30px;
+                span {
+                  font-family: w6;
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .content.CD {
+        background: url(../img/Interest/CD.png) no-repeat;
+        .content-wrapper {
+          .content-btm {
+            .subtitle {
+              margin-bottom: 30px;
+              p {
+                font-weight: normal;
+                font-family: w3;
+                span {
+                  display: block;
+                }
+              }
+            }
+            ul {
+              display: flex;
+              align-items: center;
+              li {
+                margin: 0 10px;
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .content.TV {
+        background: url(../img/Interest/TV.png) no-repeat;
+        .content-wrapper {
+          .content-top {
+            margin-bottom: 20px;
+            font-size: 30px;
+          }
+          .content-btm {
+            .subtitle {
+              margin-bottom: 30px;
+              p {
+                font-size: 25px;
+                span {
+                  font-size: 22px;
+                  display: block;
+                }
+              }
+            }
+            ul {
+              li {
+                margin-bottom: 20px;
+                &:before {
+                  content: "\25cf";
+                  line-height: 23px;
+                }
+                font-size: 25px;
+                font-family: "Quicksand";
+                font-weight: bold;
+                span {
+                  margin-left: 15px;
+                  font-family: w3;
+                  display: block;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .content.RTV {
+        .content1-2-wrapper {
+          .content1-2-body {
+            .mid.slider {
+              width: 90%;
+              margin: auto;
+              max-height: 95%;
+              .img1,
+              .img2,
+              .img3,
+              .img4,
+              .img5 {
+                width: 100%;
+                img {
+                  height: 300px;
+                  width: auto;
+                  margin: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .right-container.interest {
+    .right-container-wrapper {
+      .page-content-container {
+        .content {
+          height: calc(82vw * 0.8 * 0.7266666666666667);
+        }
+        .content.GM {
+          .content-wrapper {
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+        .content.RGV,
+        .content.RTV {
+          .content1-2-wrapper {
+            .content1-2-body {
+              .mid {
+                position: relative;
+                overflow: hidden;
+                width: 60%;
+              }
+            }
+          }
+        }
+
+        .content.DP {
+          .content-wrapper {
+            .content-top {
+              p {
+                &:nth-child(1) {
+                  font-size: 18px;
+                }
+                &:nth-child(2) {
+                  font-size: 20px;
+                }
+              }
+            }
+            .content-btm {
+              .subtitle {
+                p {
+                  font-size: 18px;
+                  span {
+                    font-size: 16px;
+                  }
+                }
+              }
+              img {
+                height: 250px;
+                width: auto;
+              }
+            }
+          }
+        }
+        .content.DP,
+        .CD {
+          background: url(../img/Interest/DP.png) no-repeat;
+          .content-wrapper {
+            .content-top {
+              margin-bottom: 30px;
+              p {
+                &:nth-child(1) {
+                  font-size: 20px;
+                }
+                &:nth-child(2) {
+                  font-size: 22px;
+                }
+              }
+            }
+            .content-btm {
+              .subtitle {
+                p {
+                  font-size: 25px;
+                  span {
+                    font-size: 23px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .right-container.interest {
+    .right-container-wrapper {
+      .page-content-container {
+        .content.TV {
+          .content-wrapper {
+            .content-top {
+              margin-bottom: 10px;
+              p {
+                font-size: 25px;
+              }
+            }
+            .content-btm {
+              .subtitle {
+                margin-bottom: 10px;
+                p {
+                  font-size: 20px;
+                  span {
+                    font-size: 18px;
+                  }
+                }
+              }
+              ul {
+                li {
+                  margin-bottom: 10px;
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .right-container.interest {
+    .right-container-wrapper {
+      .page-content-container {
+        .content {
+          min-height: 425px;
+          min-width: 592px;
+          height: calc(82vw * 0.8 * 0.7266666666666667);
+          .content-wrapper {
+            padding-top: 12%;
+            padding-left: 20px;
+          }
+        }
+        .content.GM {
+          .content-wrapper {
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .content.DP {
+          .content-wrapper {
+            .content-top {
+              p {
+                &:nth-child(1) {
+                  font-size: 18px;
+                }
+                &:nth-child(2) {
+                  font-size: 16px;
+                }
+              }
+            }
+            .content-btm {
+              .subtitle {
+                p {
+                  font-size: 18px;
+                  span {
+                    font-size: 16px;
+                  }
+                }
+              }
+              img {
+                height: 200px;
+                width: auto;
+              }
+            }
+          }
+        }
+        .content.RTV {
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .right-container.interest {
+    .right-container-wrapper {
+      .page-content-container {
+        .content {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          min-width: 310px;
+          margin: 100px auto;
+          width: 98%;
+          height: fit-content;
+          padding-top: 0;
+          &::before {
+            width: 80%;
+            content: "";
+            background-size: contain !important;
+            height: 70px;
+            position: absolute;
+            top: -7%;
+            left: calc((100vw - (98vw * 0.8)) / 2);
+          }
+          .content-wrapper {
+            padding: 12% 20px;
+            ul {
+              li {
+                p {
+                  span {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .content.GM,
+        .content.CD,
+        .content.DP,
+        .content.TV {
+          background: url(../img/frame1m.png) no-repeat;
+        }
+        .content.RGV,
+        .content.RTV {
+          .content1-2-wrapper {
+            .content1-2-top {
+              h2 {
+                text-align: center;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        .content.GM {
+          &::before {
+            background: url(../img/Interest/GM-t.png) no-repeat center;
+          }
+          .content-wrapper {
+            ul > li > p > span {
+              margin-left: 30px;
+            }
+          }
+        }
+
+        .content.DP {
+          &::before {
+            background: url(../img/Interest/DP-t.png) no-repeat center;
+            top: -10%;
+          }
+          .content-wrapper {
+            .content-btm {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+        .content.CD {
+          &::before {
+            background: url(../img/Interest/DP-t.png) no-repeat center;
+            top: -10%;
+          }
+        }
+        .content.TV {
+          &::before {
+            background: url(../img/Interest/TV-t.png) no-repeat center;
+            top: -9%;
+          }
+        }
+        .content.RTV {
+          .content1-2-wrapper {
+            .content1-2-body {
+              .mid.slider {
+                .img1,
+                .img2,
+                .img3,
+                .img4,
+                .img5 {
+                  width: 100%;
+                  img {
+                    height: auto;
+                    width: 100%;
+                    margin: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

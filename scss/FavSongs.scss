@@ -1,0 +1,279 @@
+@import "animation";
+@import "function";
+
+.FavSongs {
+  background: url(../img/bg/FavSongs-bg.png) no-repeat;
+  background-size: 100%;
+}
+
+.right-container.FavSongs {
+  .right-container-wrapper {
+    .page-title-container {
+      height: 100vh;
+    }
+    .page-content-container {
+      .song {
+        max-width: 900px;
+        max-height: 737px;
+        width: 80%;
+        height: calc(82vw * 0.8 * 0.7266666666666667);
+        margin: auto;
+        margin-bottom: 100px;
+        .song-container {
+          padding: 12% 0 10% 2%;
+          width: 95%;
+          .song-part-top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            .top-img {
+              img {
+                width: 300px;
+              }
+            }
+            .top-title {
+              margin-left: 5%;
+              .btn {
+                img {
+                  margin-top: 10px;
+                  height: 50px;
+                  cursor: url(../img/Cursor/SelectCur.png), pointer;
+                }
+                img.pause {
+                  display: none;
+                }
+              }
+            }
+          }
+          .song-part-btm {
+            font-size: 18px;
+            p.en {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+      .song1 {
+        background: url(../img/FavSongs/kawaki.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .song2 {
+        background: url(../img/FavSongs/yorunikakeru.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .song3 {
+        background: url(../img/FavSongs/historia.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .song4 {
+        background: url(../img/FavSongs/marigold.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .song5 {
+        background: url(../img/FavSongs/daddy.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .song6 {
+        background: url(../img/FavSongs/shikoku.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .song7 {
+        background: url(../img/FavSongs/ametsu.png) no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .right-container.FavSongs {
+    .right-container-wrapper {
+      .page-title-container {
+        height: 100vh;
+      }
+      .page-content-container {
+        .song {
+          .song-container {
+            .song-part-top {
+              .top-img {
+                img {
+                  width: 250px;
+                }
+              }
+            }
+            .song-part-btm {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .right-container.FavSongs {
+    .right-container-wrapper {
+      .page-title-container {
+        height: 100vh;
+      }
+      .page-content-container {
+        .song {
+          background: url(../img/frame1m.png) no-repeat;
+          background-size: 100% 100%;
+          height: fit-content;
+          position: relative;
+          &::before {
+            width: 320px;
+            content: "";
+            background-size: contain !important;
+            height: 70px;
+            position: absolute;
+            top: -7%;
+            left: calc(((82vw * 0.8) / 2) - 160px);
+          }
+          .song-container {
+            padding: 12% 5% 12% 7%;
+            .song-part-top {
+              .top-title {
+                ul {
+                  word-break: keep-all;
+                }
+              }
+            }
+          }
+        }
+        .song1 {
+          &::before {
+            background: url(../img/FavSongs/kawaki-banner.png) no-repeat;
+          }
+        }
+        .song2 {
+          &::before {
+            background: url(../img/FavSongs/yoru-banner.png) no-repeat;
+          }
+        }
+        .song3 {
+          &::before {
+            background: url(../img/FavSongs/historia-b.png) no-repeat;
+          }
+        }
+        .song4 {
+          &::before {
+            background: url(../img/FavSongs/marigold-b.png) no-repeat;
+          }
+        }
+        .song5 {
+          &::before {
+            background: url(../img/FavSongs/ddd-b.png) no-repeat;
+          }
+        }
+        .song6 {
+          &::before {
+            background: url(../img/FavSongs/sk.png) no-repeat;
+            top: -6%;
+          }
+        }
+        .song7 {
+          &::before {
+            background: url(../img/FavSongs/ame-b.png) no-repeat;
+            top: -5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .right-container.FavSongs {
+    .right-container-wrapper {
+      .page-content-container {
+        .song {
+          &::before {
+            left: calc(((100vw * 0.8) / 2) - 160px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .right-container.FavSongs {
+    .right-container-wrapper {
+      .page-content-container {
+        .song {
+          background: none;
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          max-height: none;
+          &::before {
+            position: unset;
+            background: none;
+            text-align: center;
+            font-size: 26px;
+            color: #f45391;
+            font-family: w6;
+          }
+          .song-container {
+            padding: 0;
+            .song-part-top {
+              flex-direction: column;
+              text-align: center;
+              .top-title {
+                ul > li > p {
+                  font-size: 20px;
+                }
+                .btn {
+                  img {
+                    margin: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .song1 {
+          &::before {
+            content: "「カワキヲアメク」";
+          }
+        }
+        .song2 {
+          &::before {
+            content: "「夜に駆ける」";
+          }
+        }
+        .song3 {
+          &::before {
+            content: "「ヒストリア」";
+          }
+        }
+        .song4 {
+          &::before {
+            content: "「マリゴールド」";
+          }
+        }
+        .song5 {
+          &::before {
+            content: "「DADDY! DADDY! DO! feat. 鈴木愛理」";
+            font-size: 14px;
+          }
+        }
+        .song6 {
+          &::before {
+            content: "「漆黒を塗りつぶせ」";
+          }
+        }
+        .song7 {
+          &::before {
+            content: "「アメヲマツ、」";
+          }
+        }
+      }
+    }
+  }
+}
