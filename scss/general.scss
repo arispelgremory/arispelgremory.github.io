@@ -24,6 +24,10 @@ body {
   background-color: #fafafa;
 }
 
+option {
+  @extend .onigiri;
+}
+
 p {
   line-height: 1.6;
 }
