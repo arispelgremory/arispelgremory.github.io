@@ -2,128 +2,151 @@
   <h2 class="question-txt" id="t2q1q" >1.當你去爬山的時候, 你會早點出發??</h2>
   <div class="select">
     <div>
-        <input type="radio" name="t2q1" value="yes" />
-        <span>會</span><br />
+        <input type="radio" name="t2q1" value="yes" id="t2q1a1" />
+        <label for = "t2q1a1">會</label><br />
     </div>
     <div>
-        <input type="radio" name="t2q1" value="no" />
-        <span>不會</span> <br />
+        <input type="radio" name="t2q1" value="no"  id="t2q1a2"/>
+        <label for = "t2q1a2">不會</label> <br />
     </div>
     </div>
     <p class="debug"></p>
     <button class="NQ"></button>
-
 </div>
     
 <div class="t2question2 t2q" style="display:none;">
   <h2 class="question-txt" id="t2q2q">2.当你在深山看到一间草屋 你会去窗口那边看 还是看了下 就走??</h2>
     <div class="select">
     <div>
-        <input type="radio" name="t2q2" value="yes" />
-        <span>去窗口那边看</span><br />
+        <input type="radio" name="t2q2" value="yes" id="t2q2a1" />
+        <label for = "t2q2a1">去窗口那边看</label><br />
     </div>
     <div>
-        <input type="radio" name="t2q2" value="no" />
-        <span>还是看了下就走</span> <br />
+        <input type="radio" name="t2q2" value="no"  id="t2q2a2"/>
+        <label for = "t2q2a2">还是看了下就走</label> <br />
     </div>
     </div>
     <p class="debug"></p>
-    <button class="NQ"></button>
+    <div class="skipBtn">
+        <button class="LQ"></button>
+        <button class="NQ"></button>
+    </div>
 </div>
     
 <div class="t2question3 t2q" style="display:none;">
   <h2 class="question-txt" id="t2q3q">3.当你走到渴了 看到前面有河 但走去河的瞬间 有一朵很漂亮漂亮的花朵 你没看过 你会停下来欣赏花先 还是 去喝水先?</h2>
     <div class="select">
     <div>
-        <input type="radio" name="t2q3" value="yes" />
-        <span>停下来欣赏花先</span><br />
+        <input type="radio" name="t2q3" value="yes" id="t2q3a1" />
+        <label for = "t2q3a1">停下来欣赏花先</label><br />
     </div>
     <div>
-        <input type="radio" name="t2q3" value="no"  />
-        <span>去喝水先</span> <br />
+        <input type="radio" name="t2q3" value="no"  id="t2q3a2" />
+        <label for = "t2q3a2">去喝水先</label> <br />
     </div>
     </div>
     <p class="debug"></p>
-    <button class="NQ"></button>
-</div>
+    <div class="skipBtn">
+        <button class="LQ"></button>
+        <button class="NQ"></button>
+    </div>
+    </div>
 <div class="t2question4 t2q" style="display:none;">
   <h2 class="question-txt" id="t2q4q">4.你要在深山住1年 你盖一间草屋 你会围篱笆吗？</h2>
      <div class="select">
     <div>
-        <input type="radio" name="t2q4" value="yes" />
-        <span>會</span><br />
+        <input type="radio" name="t2q4" value="yes" id="t2q4a1" />
+        <label for = "t2q4a1">會</label><br />
     </div>
     <div>
-        <input type="radio" name="t2q4" value="no" />
-        <span>不會</span> <br />
+        <input type="radio" name="t2q4" value="no"  id="t2q4a2"/>
+        <label for = "t2q4a2">不會</label> <br />
     </div>
     </div>
     <p class="debug"></p>
-    <button class="NQ"></button>
-</div>
+    <div class="skipBtn">
+        <button class="LQ"></button>
+        <button class="NQ"></button>
+    </div>
+    </div>
 <div class="t2question5 t2q" style="display:none;">
   <h2 class="question-txt" id="t2q5q">5.在深山悠闲走路的时候 你觉得你眼前会出现什么动物 (或者你期待看到什么动物)? 1种就好</h2>
     <input type="text" id="T2Q5">
     <p class="debug"></p>
-    <button class="NQ"></button>
-</div>
+    <div class="skipBtn">
+        <button class="LQ"></button>
+        <button class="NQ"></button>
+    </div>
+    </div>
 <div class="t2question6 t2q" style="display:none;">
   <h2 class="question-txt" id="t2q6q">6.同时间 你转去后面 你又会看到什么动物???</h2>
     <input type="text" id="T2Q6">
     <p class="debug"></p>
-    <button class="NQ"></button>
-</div>
+    <div class="skipBtn">
+        <button class="LQ"></button>
+        <button class="NQ"></button>
+    </div>
+    </div>
     
 <div class="t2question7 t2q" style="display:none;">
   <h2 class="question-txt" id="t2q7q">7.走下走下 下雨了 前面3棵树 小 中 大 你会跑去哪一棵树避雨?</h2>
      <div class="select">
     <div>
-        <input type="radio" name="t2q7" value="s" />
-        <span>小</span><br />
+        <input type="radio" name="t2q7" value="s" / id="t2q7a1">
+        <label for = "t2q7a1">小</label><br />
     </div>
     <div>
-        <input type="radio" name="t2q7" value="m" />
-        <span>中</span> <br />
+        <input type="radio" name="t2q7" value="m" / id="t2q7a2">
+        <label for = "t2q7a2">中</label> <br />
     </div>
     <div>
-        <input type="radio" name="t2q7" value="l" />
-        <span>大</span> <br />
+        <input type="radio" name="t2q7" value="l" / id="t2q7a3">
+        <label for = "t2q7a3">大</label> <br />
     </div>
     </div>
     <p class="debug"></p>
-    <button class="NQ"></button>
-</div>
+    <div class="skipBtn">
+        <button class="LQ"></button>
+        <button class="NQ"></button>
+    </div>
+    </div>
     
 <div class="t2question8 t2q" style="display:none;">
   <h2 class="question-txt" id="t2q8q">8.玩够了 现在要回家了 2条路 你要走大路(会比较久到家) 还是 你要选择弯曲小路 路上可能会有些树枝之类的 (会比较快到家)???</h2>
      <div class="select">
     <div>
-        <input type="radio" name="t2q8" value="yes" />
-        <span>大路</span><br />
+        <input type="radio" name="t2q8" value="yes" id="t2q8a1" />
+        <label for = "t2q8a1">大路</label><br />
     </div>
     <div>
-        <input type="radio" name="t2q8" value="no" />
-        <span>小路</span> <br />
+        <input type="radio" name="t2q8" value="no"  id="t2q8a2"/>
+        <label for = "t2q8a2">小路</label> <br />
     </div>
     </div>
     <p class="debug"></p>
-    <button class="NQ"></button>
-</div>
+    <div class="skipBtn">
+        <button class="LQ"></button>
+        <button class="NQ"></button>
+    </div>
+    </div>
 <div class="t2question9 t2q" style="display:none;">
   <h2 class="question-txt" id="t2q9q">9.路上 你看到一串钥匙 你选择捡起来 还是 无视它??</h2>
    <div class="select">
     <div>
-        <input type="radio" name="t2q9" value="yes" />
-        <span>會</span><br />
+        <input type="radio" name="t2q9" value="yes" id="t2q9a1" />
+        <label for = "t2q9a1">會</label><br />
     </div>
     <div>
-        <input type="radio" name="t2q9" value="no" />
-        <span>無視</span> <br />
+        <input type="radio" name="t2q9" value="no"  id="t2q9a2"/>
+        <label for = "t2q9a2">無視</label> <br />
     </div>
     </div>
     <p class="debug"></p>
-    <button class="NQ"></button>
-</div>
+    <div class="skipBtn">
+        <button class="LQ"></button>
+        <button class="NQ stop"></button>
+    </div>
+    </div>
 <div class="t2result red" style="display: none;">
         <h2 id="ans-title">你的答案:</h2> 
    
@@ -136,6 +159,7 @@
              <div class="ans-sel">
                 <select name="test2" id=""></select>
             </div>
+            <button class="back"></button>
         </div>
         <div class = "t2result-display">
             <h2 class="result-question"></h2>

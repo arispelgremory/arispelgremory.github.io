@@ -1,0 +1,1156 @@
+{
+  "questions": [
+    {
+      "title": "受背痛之苦",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "1"
+    },
+    {
+      "title": "睡眠無規律且不安穩",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "2"
+    },
+    {
+      "title": "頭痛",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "3"
+    },
+    {
+      "title": "顎部痛",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "4"
+    },
+    {
+      "title": "如果需要等候，會感覺不安",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "5"
+    },
+    {
+      "title": "脖子痛",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "6"
+    },
+    {
+      "title": "比多數人更容易緊張",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "7"
+    },
+    {
+      "title": "很難入睡",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "8"
+    },
+    {
+      "title": "感到頭部發緊或痛",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "9"
+    },
+    {
+      "title": "胃不好",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "10"
+    },
+    {
+      "title": "對自己沒有信心",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "11"
+    },
+    {
+      "title": "對自己說話",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "12"
+    },
+    {
+      "title": "擔心財務問題",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "13"
+    },
+    {
+      "title": "與人見面時感到窘迫",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "14"
+    },
+    {
+      "title": "擔心發生可怕的事情",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "15"
+    },
+    {
+      "title": "白天覺得很累",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "16"
+    },
+    {
+      "title": "下午感到喉嚨痛，但並非感冒所致",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "17"
+    },
+    {
+      "title": "心裡不安，無法靜坐",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "18"
+    },
+    {
+      "title": "感到非常口干",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "19"
+    },
+    {
+      "title": "心臟有毛病",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "20"
+    },
+    {
+      "title": "覺得自己非常無用",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "21"
+    },
+    {
+      "title": "吸煙",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "22"
+    },
+    {
+      "title": "肚子不舒服",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "23"
+    },
+    {
+      "title": "覺得不快樂",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "24"
+    },
+    {
+      "title": "流汗",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "25"
+    },
+    {
+      "title": "喝酒",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "26"
+    },
+    {
+      "title": "很自覺",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "27"
+    },
+    {
+      "title": "覺得自己像四分五裂了",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "28"
+    },
+    {
+      "title": "眼睛又酸又累",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "29"
+    },
+    {
+      "title": "腿或腳抽筋",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "30"
+    },
+    {
+      "title": "心跳加速",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "31"
+    },
+    {
+      "title": "怕結識人",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "32"
+    },
+    {
+      "title": "手冷腳冷",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "33"
+    },
+    {
+      "title": "便秘",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "34"
+    },
+    {
+      "title": "未經醫生處方亂吃藥",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "35"
+    },
+    {
+      "title": "發現自己很容易哭",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "36"
+    },
+    {
+      "title": "消化不良",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "37"
+    },
+    {
+      "title": "咬手指",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "38"
+    },
+    {
+      "title": "耳朵有嗡嗡聲",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "39"
+    },
+    {
+      "title": "小便次數多",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "40"
+    },
+    {
+      "title": "有胃溃疡的毛病",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "41"
+    },
+    {
+      "title": "有皮膚方面的毛病",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "42"
+    },
+    {
+      "title": "擔心工作",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "43"
+    },
+    {
+      "title": "有口腔潰瘍",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "44"
+    },
+    {
+      "title": "為小事所厭煩",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "45"
+    },
+    {
+      "title": "呼吸急促",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "46"
+    },
+    {
+      "title": "覺得胸部緊迫",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "47"
+    },
+    {
+      "title": "很難做出決定",
+      "option4": {
+        "score": "4",
+        "text": "總是"
+      },
+      "option3": {
+        "score": "3",
+        "text": "經常"
+      },
+      "option2": {
+        "score": "2",
+        "text": "有時"
+      },
+      "option1": {
+        "score": "1",
+        "text": "很少"
+      },
+      "option0": {
+        "score": "0",
+        "text": "從未"
+      },
+      "no": "48"
+    }
+  ]
+}

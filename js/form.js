@@ -25,10 +25,10 @@ $(document).ready(() => {
     }
 
     if (!$('input[name="msg"]').val()) {
-      $($('label[for="msg"]')).html("Last Name <span>姓:</span>").append("<p>Please don't leave it blank 請輸入您的姓</p>").addClass("error");
+      $($('label[for="msg"]')).html("Message <span>信息:</span>").append("<p>Please don't leave it blank 請輸入您的信息</p>").addClass("error");
       error = true;
     } else {
-      $($('label[for="msg"]')).html("Last Name <span>姓:</span>").removeClass("error");
+      $($('label[for="msg"]')).html("Message <span>信息:</span>").removeClass("error");
     }
 
     if (error) {
