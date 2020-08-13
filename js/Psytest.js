@@ -22,7 +22,6 @@ $(document).ready(function () {
   $("#userSubmit").click((e) => {
     e.preventDefault();
     EmailValidation();
-    $(".select-q").delay(500).fadeIn();
   });
 
   $("#test1").click(() => {
@@ -65,6 +64,7 @@ function EmailValidation() {
     $(".user-info").fadeOut();
     localStorage.setItem("name", $('input[name="Name"]').val());
     localStorage.setItem("email", $('input[name="Email"]').val());
+    $(".select-q").delay(500).fadeIn();
     return false;
   }
 }
@@ -73,12 +73,7 @@ function test1() {
   var test1Intro = "<p>你觉得你目前所承受的压力会过大吗？以及你现在承受的压力比多少比例的人要高？如果你想了解自己的压力有多大，那么这份经典的APESK-PSTR心理压力量表能够帮助到你！</p><p>PSTR心理压力量表由瑞士心理学家爱德沃兹于1983年编制，以德国心理学家穆瑞在1968年提出的心理压力因素理论为基础。</p><button class='start' id='Q1'></button>";
   $(".test-questions-container").html(test1Intro);
   $(".test-questions").delay(500).fadeIn();
-  $("button.start#Q1").click(() => {
-    setTimeout(() => {
-      // loadTest1Q();
-    }, 500);
-    // $(".test-questions-container").fadeOut();
-  });
+  startTimer1();
 }
 
 function loadTest1Q() {
@@ -140,7 +135,7 @@ function loadTest1Q() {
             .fadeIn();
 
           if (c > 48) {
-            stopTime();
+            isPaused = true;
             test1Result();
           }
         } else {
@@ -178,19 +173,19 @@ function test1Result() {
   }
 
   if (marks >= 93) {
-    comment = "表示处于高度应激反应中,身心遭受压力伤害，你需要专业心理治疗师给与一些忠告，它可以帮助你削减你对压力的知觉，并帮助你改良生活的品质。";
+    comment = "表示處於高度應激反應中,身心遭受壓力傷害，你需要專業心理治療師給與一些忠告，它可以幫助你削減你對壓力的知覺，並幫助你改良生活的品質。";
   } else if (marks >= 82 && marks <= 92) {
-    comment = "这个分数表示是你正在经历太大的压力，身心健康正在受到损害，并令你的人际关系发生问题。你的行为会伤害自己，也会影响他人。因此， 对你来说，学会如何减除自己的压力反应是非常必要的。你可能必须花时间做练习，学习控制压力，也可以寻求专业的帮助。";
+    comment = "這個分數表示是你正在經歷太大的壓力，身心健康正在受到損害，並令你的人際關係發生問題。你的行為會傷害自己，也會影響他人。因此， 對你來說，學會如何減除自己的壓力反應是非常必要的。你可能必須花時間做練習，學習控制壓力，也可以尋求專業的幫助。";
   } else if (marks >= 71 && marks <= 81) {
-    comment = "这个分数显示你的压力程度中等，可能正开始对健康不利，你可以仔细反省自己对压力器如何做出反应，并学习在压力器出现时，控制自己的肌肉紧张，已消除生理激活反应。";
+    comment = "這個分數顯示你的壓力程度中等，可能正開始對健康不利，你可以仔細反省自己對壓力器如何做出反應，並學習在壓力器出現時，控制自己的肌肉緊張，已消除生理激活反應。";
   } else if (marks >= 60 && marks <= 70) {
-    comment = "这个分数指出你生活中的兴奋与压力也许是相当适中的。偶尔会有一段时间压力太大，但你也许有能力去享受压力，并且很快回到平衡状态，因此对你的健康不会造成威胁。";
+    comment = "這個分數指出你生活中的興奮與壓力也許是相當適中的。偶爾會有一段時間壓力太大，但你也許有能力去享受壓力，並且很快回到平衡狀態，因此對你的健康不會造成威脅。";
   } else if (marks >= 49 && marks <= 59) {
-    comment = "这个分数表示你能够控制你自己的压力反应，你是一个相当放松的人。也许你对于所遇到的各种压力，并没有将他们解释为威胁，所以你很容易与人相处，可以毫无惧怕担任工作，也没有失去信心。";
+    comment = "這個分數表示你能夠控制你自己的壓力反應，你是一個相當放鬆的人。也許你對於所遇到的各種壓力，並沒有將他們解釋為威脅，所以你很容易與人相處，可以毫無懼怕擔任工作，也沒有失去信心。";
   } else if (marks >= 38 && marks <= 48) {
-    comment = "这个分数表示你对所遭遇的压力很不易为所动，甚至不当一回事，好像并没有发生过一样。这对你的健康不会有什么负面影响，但你的生活缺乏适度的兴奋，因此趣味也就有限。";
+    comment = "這個分數表示你對所遭遇的壓力很不易為所動，甚至不當一回事，好像並沒有發生過一樣。這對你的健康不會有什麼負面影響，但你的生活缺乏適度的興奮，因此趣味也就有限。";
   } else if (marks >= 16 && marks <= 26) {
-    comment = "如果你的分数值落在这个范围内，也许意味着你在生活中所经历的的压力经验不够，或是你没有正确地分析自己。你最好更主动些，在工作、社交、娱乐等活动上多增加些刺激。";
+    comment = "如果你的分數值落在這個範圍內，也許意味著你在生活中所經歷的的壓力經驗不夠，或是你沒有正確地分析自己。你最好更主動些，在工作、社交、娛樂等活動上多增加些刺激。";
   } else {
     comment = "你沒有壓力瓜。 NJHL";
   }
@@ -208,8 +203,7 @@ function test2() {
   var test2Intro = "<p>這個測試, 是關於你對於一些情況時做出的反應而來分析你在面對一些事情的時候的性格...</p><button class='start' id='Q2'></button>";
   $(".test-questions-container").html(test2Intro);
   $(".test-questions").delay(500).fadeIn();
-  startTimer();
-  timer();
+  startTimer2();
 }
 
 function loadTest2Q1() {
@@ -247,6 +241,8 @@ function loadTest2Q1() {
             if (x >= 10) {
               setTimeout(() => {
                 isPaused = true;
+                localStorage.setItem("min", min);
+                localStorage.setItem("sec", sec);
                 result2();
                 timer();
               }, 700);
@@ -290,10 +286,10 @@ function result2() {
   let explain = "";
   if (q1ans == "yes") {
     ans = "會";
-    explain = "证明你这个人做事已经有plan了 or 事情会很早就完成";
+    explain = "證明你這個人做事已經有plan了 or 事情會很早就完成";
   } else {
     ans = "不會";
-    explain = "证明你这个人沒有plan or 事情只會慢慢完成";
+    explain = "證明你這個人沒有plan or 事情只會慢慢完成";
   }
 
   $("p.YourQ").append("你的答案:<span>" + ans + "</span>");
@@ -310,50 +306,50 @@ function result2() {
     if (qans == "yes") {
       if (index == 1) {
         ans = "會";
-        explain = "证明你这个人做事已经有plan了 or 事情会很早就完成";
+        explain = "證明你這個人做事已經有plan了 or 事情會很早就完成";
       } else if (index == 2) {
         ans = "會";
-        explain = "你是个很有好奇心的人";
+        explain = "你是個很有好奇心的人";
       } else if (index == 3) {
-        ans = "停下来欣赏花先";
-        explain = "你不是个花心的人";
+        ans = "停下來欣賞花先";
+        explain = "你是個花心的人";
       } else if (index == 4) {
         ans = "會";
-        explain = "你可能是个小心的人(同时间 不会特别好客)";
+        explain = "你可能是個小心的人(同時間 不會特別好客)";
       } else if (index == 8) {
         ans = "會";
-        explain = "你很愿意接受挑战";
+        explain = "你很願意接受挑戰";
       } else if (index == 9) {
         ans = "會";
-        explain = "你很重视友情";
+        explain = "你很重視友情";
       }
     } else if (qans == "no") {
       if (index == 1) {
         ans = "不會";
-        explain = "证明你这个人沒有plan or 事情只會慢慢完成";
+        explain = "證明你這個人沒有plan or 事情只會慢慢完成";
       } else if (index == 2) {
         ans = "不會";
-        explain = "你是不个很有好奇心的人";
+        explain = "你是不個很有好奇心的人";
       } else if (index == 3) {
         ans = "去喝水先";
-        explain = "你是个花心的人";
+        explain = "你不是個花心的人";
       } else if (index == 4) {
         ans = "不會";
-        explain = "你可能是个小心的人(同时间 不会特别好客)";
+        explain = "你可能是個小心的人(同時間 不會特別好客)";
       } else if (index == 8) {
         ans = "不會";
-        explain = "你不太愿意接受挑战";
+        explain = "你不太願意接受挑戰";
       } else if (index == 9) {
         ans = "無視掉";
-        explain = "你不太重视友情";
+        explain = "你不太重視友情";
       }
     } else {
       if (index == 5) {
         ans = qans;
-        explain = "你心想要的伴侣 就是 那个动物的特征";
+        explain = "你心想要的伴侶 就是 那個動物的特徵";
       } else if (index == 6) {
         ans = qans;
-        explain = "你本人的性格 和你选的动物的特征差不多";
+        explain = "你本人的性格 和你選的動物的特徵差不多";
       } else if (index == 7) {
         if (qans == "s") {
           ans = "小";
@@ -363,7 +359,7 @@ function result2() {
           explain = "证明你想要的伴侣是年纪 阅历 能力...跟你一樣 就是你希望你可以互相保护你的伴侶";
         } else if (qans == "l") {
           ans = "大";
-          explain = "证明你想要的伴侣是年纪 阅历 能力...比你大 就是你希望你被保护";
+          explain = "證明你想要的伴侶是年紀 閱歷 能力...比你大 就是你希望你被保護";
         }
       }
     }
@@ -384,16 +380,29 @@ function result2() {
   });
 }
 
-function startTimer() {
+function startTimer1() {
   $("button.start").on("click", function (e) {
-    console.log("shit");
+    e.preventDefault();
+    $(".test-questions-container").fadeOut();
+    setTimeout(() => {
+      isPaused = false;
+      $(".timer").css({ display: "block" });
+      loadTest1Q();
+      timer();
+    }, 500);
+    $(".test-questions-container").fadeOut();
+  });
+}
+
+function startTimer2() {
+  $("button.start").on("click", function (e) {
     e.preventDefault();
     $(".test-questions-container").fadeOut();
     setTimeout(() => {
       isPaused = false;
       $(".timer").css({ display: "block" });
       loadTest2Q1();
-      console.log(isPaused);
+      timer();
     }, 500);
   });
 }
@@ -404,7 +413,6 @@ function timer() {
   var sec = 0;
   var min = 0;
   var t = window.setInterval(function () {
-    console.log(isPaused);
     if (!isPaused) {
       sec++;
       if (sec >= 60) {

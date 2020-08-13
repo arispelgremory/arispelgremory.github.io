@@ -1,0 +1,258 @@
+@import "animation";
+@import "function";
+
+.FavSinger {
+  background: url(../img/bg/FavSinger-bg.png) no-repeat;
+  background-size: contain;
+}
+
+.right-container.FavSinger {
+  .right-container-wrapper {
+    .page-title-container {
+      height: 100vh;
+      position: relative;
+      .arrowBtm {
+        position: absolute;
+        bottom: 20px;
+        animation: bounce 2.5s infinite;
+        img {
+          height: 2.5vw;
+          width: 2.5vw;
+          min-height: 50px;
+          min-width: 50px;
+        }
+      }
+    }
+    .page-content-container {
+      .singer1,
+      .singer2,
+      .singer3 {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+        .singer-top {
+          text-align: center;
+          .singer-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+            &::before {
+              width: 40px;
+              content: "";
+              background: url(../img/icon/blueclover.png) no-repeat;
+              background-size: contain;
+              height: 40px;
+              margin-right: 10px;
+            }
+            &::after {
+              width: 40px;
+              content: "";
+              background: url(../img/icon/blueclover.png) no-repeat;
+              background-size: contain;
+              height: 40px;
+              margin-left: 10px;
+            }
+            h2 {
+              font-size: 26px;
+              color: #118dec;
+            }
+          }
+          .singer-img {
+            margin-bottom: 30px;
+            img {
+              width: 220px;
+            }
+          }
+          .singer-info {
+            margin-bottom: 25px;
+            word-break: keep-all;
+            ul > li {
+              margin: 10px;
+              p {
+                font-size: 14px;
+                font-family: w6;
+              }
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .singer-btm {
+          p.en {
+            margin-bottom: 20px;
+            font-family: "Quicksand";
+            font-weight: 500;
+          }
+        }
+      }
+      .singer3 {
+        .singer-top {
+          .singer-name {
+            h2 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .right-container.FavSinger {
+    .right-container-wrapper {
+      .page-content-container {
+        .singer1,
+        .singer2,
+        .singer3 {
+          width: 684px;
+          height: 594px;
+          padding: 12% 2% 0 5%;
+          .singer-top {
+            display: flex;
+            text-align: left;
+            .singer-name {
+              display: none;
+            }
+            .singer-info {
+              margin-left: 40px;
+            }
+          }
+        }
+
+        .singer1 {
+          background: url(../img/singer/373-bg.png) no-repeat;
+          background-size: contain;
+        }
+        .singer2 {
+          background: url(../img/singer/aimyon-bg.png) no-repeat;
+          background-size: contain;
+        }
+        .singer3 {
+          background: url(../img/singer/chico-bg.png) no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .right-container.FavSinger {
+    .right-container-wrapper {
+      .page-content-container {
+        .singer1,
+        .singer2,
+        .singer3 {
+          width: 95%;
+          height: calc((82vw * 0.95) * 0.869692532942899);
+          background-size: 100% 100%;
+          .singer-top {
+            align-items: center;
+            .singer-img {
+              margin-bottom: 0;
+            }
+            .singer-info {
+              margin-bottom: 0;
+            }
+          }
+          .singer-btm {
+            font-size: 14px;
+            p.en {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .right-container.FavSinger {
+    .right-container-wrapper {
+      .page-content-container {
+        .singer1,
+        .singer2,
+        .singer3 {
+          width: 80%;
+          height: calc((82vw * 0.8) * 0.869692532942899);
+          background-size: 100% 100%;
+          max-width: 1000px;
+          max-height: 869px;
+          .singer-top {
+            align-items: center;
+            .singer-img {
+              margin-bottom: 0;
+            }
+            .singer-info {
+              margin-bottom: 0;
+            }
+          }
+          .singer-btm {
+            font-size: 16px;
+            p.en {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .right-container.FavSinger {
+    .right-container-wrapper {
+      .page-content-container {
+        .singer1,
+        .singer2,
+        .singer3 {
+          .singer-top {
+            margin-bottom: 20px;
+            .singer-img {
+              img {
+                width: 320px;
+              }
+            }
+            .singer-info {
+              ul > li {
+                p {
+                  font-size: 24px;
+                }
+                span {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+          .singer-btm {
+            font-size: 16px;
+            p.en {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .right-container.FavSinger {
+    .right-container-wrapper {
+      .page-content-container {
+        .singer1,
+        .singer2,
+        .singer3 {
+          padding: 150px 5% 0 90px;
+          .singer-btm {
+            font-size: 18px;
+            p.en {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
