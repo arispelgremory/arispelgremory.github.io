@@ -319,10 +319,11 @@
         .self-intro-container,
         .website-intro-container {
           max-width: 270px;
+          text-align: center;
+          align-items: center;
           .title {
             margin-bottom: 50px;
             width: 270px;
-            padding: 0 10px;
             img {
               width: 270px;
             }

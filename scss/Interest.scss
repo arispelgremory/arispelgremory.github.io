@@ -115,7 +115,7 @@
           .mid {
             position: relative;
             overflow: hidden;
-            padding-top: 25%;
+            padding: 100px 0;
             width: 100%;
             margin: auto;
             max-width: 400px;
@@ -239,6 +239,8 @@
               width: 90%;
               margin: auto;
               max-height: 95%;
+              display: flex;
+              align-items: center;
               .img1,
               .img2,
               .img3,
@@ -492,7 +494,17 @@
             }
             .content1-2-body {
               .mid {
-                padding-top: 35%;
+                padding: 80px 0;
+              }
+            }
+          }
+        }
+
+        .content.RGV {
+          .content1-2-wrapper {
+            .content1-2-body {
+              .mid {
+                max-width: 300px;
               }
             }
           }
