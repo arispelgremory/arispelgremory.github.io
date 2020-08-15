@@ -82,11 +82,17 @@
 
               p {
                 font-family: "Quicksand";
-                font-weight: bold;
+                font-weight: normal;
                 -webkit-text-stroke: 1px black;
+                span {
+                  color: inherit;
+                  font-weight: inherit;
+                  font-family: inherit;
+                }
               }
               span {
                 font-family: w6;
+                color: #118dec;
               }
             }
             .content-info {

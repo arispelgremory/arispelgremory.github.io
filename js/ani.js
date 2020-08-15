@@ -4,7 +4,7 @@ var height = $(window).height();
 
 $(window).on("load", () => {
   $(".loading").removeClass("ready");
-  $("#loading_character").delay(2000).removeClass("ready");
+  $("#loading_character").delay(5000).removeClass("ready");
 });
 
 $(document).ready(() => {

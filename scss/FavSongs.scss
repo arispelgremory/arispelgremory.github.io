@@ -45,6 +45,20 @@
             }
             .top-title {
               margin-left: 5%;
+              ul {
+                li {
+                  p {
+                    &:nth-child(1) {
+                      font-size: 18px;
+                    }
+                    &:nth-child(2) {
+                      color: #118dec;
+                      font-family: w6;
+                      font-size: 18px;
+                    }
+                  }
+                }
+              }
               .btn {
                 img {
                   margin-top: 10px;

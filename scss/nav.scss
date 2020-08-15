@@ -35,38 +35,40 @@
     ul {
       font-family: w6;
     }
-    ul.social {
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 6vh;
-      img {
-        width: calc((50 / 1920) * 100vw);
-        height: auto;
-        &:hover {
-          animation: iconRotate 1s;
-          @extend .onigiri;
+    .nav-btm {
+      max-height: 70vh;
+      overflow-y: auto;
+      ul.social {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 6vh;
+        img {
+          width: calc((50 / 1920) * 100vw);
+          height: auto;
+          &:hover {
+            animation: iconRotate 1s;
+            @extend .onigiri;
+          }
         }
       }
-    }
-    ul.list {
-      max-height: 60vh;
-      overflow-y: auto;
-      li {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin: 10px 0;
-        padding: 0 10% 0 3%;
-        height: listheight();
-        @extend .onigiri;
-        &:hover {
-          @extend .selected;
-          transition: all 0.5s;
-        }
-        a {
+      ul.list {
+        li {
           width: 100%;
-          span {
-            @extend .onigiri;
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          padding: 0 10% 0 3%;
+          height: listheight();
+          @extend .onigiri;
+          &:hover {
+            @extend .selected;
+            transition: all 0.5s;
+          }
+          a {
+            width: 100%;
+            span {
+              @extend .onigiri;
+            }
           }
         }
       }
@@ -129,44 +131,47 @@
         width: 200px;
       }
     }
-    ul.list {
-      overflow-y: auto;
-      overflow-x: hidden;
-
-      display: grid;
-      grid-template-areas:
-        "p1 p6"
-        "p2 p7"
-        "p3 p8"
-        "p4 p9"
-        "p5 p5";
-      margin: 0 50px;
-      li {
+    .nav-btm {
+      height: 100%;
+      ul.list {
+        overflow-y: auto;
+        overflow-x: hidden;
         height: 100%;
-        padding: 0;
-        @for $i from 1 to 9 {
-          &:nth-child(#{$i}) {
-            grid-area: p + $i;
-            @if $i >= 6 {
-              margin-left: 30px;
+        display: grid;
+        grid-template-areas:
+          "p1 p6"
+          "p2 p7"
+          "p3 p8"
+          "p4 p9"
+          "p5 p5";
+        margin: 0 50px;
+        li {
+          height: 100%;
+          padding: 0;
+          @for $i from 1 to 9 {
+            &:nth-child(#{$i}) {
+              grid-area: p + $i;
+              @if $i >= 6 {
+                margin-left: 30px;
+              }
             }
           }
-        }
-        &:nth-last-child(1) {
-          margin-right: 50px;
-          margin-left: 30px;
-          .nav-eng {
-            font-size: 35px;
-          }
-          .nav-cn {
-            font-size: 31px;
+          &:nth-last-child(1) {
+            margin-right: 50px;
+            margin-left: 30px;
+            .nav-eng {
+              font-size: 35px;
+            }
+            .nav-cn {
+              font-size: 31px;
+            }
           }
         }
       }
     }
-  }
-  ul.social {
-    display: none;
+    ul.social {
+      display: none;
+    }
   }
 }
 
@@ -267,7 +272,6 @@
     .navbar.mobile {
       .navbar-wrapper {
         ul.list {
-          height: 80%;
           margin: 0 20px;
           li {
             align-items: stretch;
